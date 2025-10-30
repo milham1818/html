@@ -1,0 +1,113 @@
+/* Styling Umum dan Penempatan Konten di Tengah */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Warna latar belakang halaman */
+    margin: 0;
+    display: flex; /* Menggunakan Flexbox untuk menengahkan konten */
+    justify-content: center; /* Menengahkan horizontal */
+    align-items: center; /* Menengahkan vertikal (jika konten pendek) */
+    min-height: 100vh; /* Memastikan body minimal setinggi viewport */
+}
+
+/* Styling Kartu Profil */
+.card-container {
+    width: 100%;
+    max-width: 400px; /* Lebar maksimum kartu */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    padding: 30px 25px;
+    text-align: center; /* Menengahkan teks di dalam kartu secara default */
+}
+
+/* Styling Bagian Header/Foto */
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Membuat foto menjadi lingkaran */
+    object-fit: cover; /* Memastikan gambar terpotong rapi di dalam lingkaran */
+    border: 3px solid #ccc; /* Bingkai tipis */
+    margin-bottom: 5px;
+}
+
+.photo-label {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.name {
+    margin: 5px 0 5px 0;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333;
+}
+
+.tagline {
+    font-size: 1em;
+    color: #555;
+    margin: 0 0 15px 0;
+    padding: 0 10px; /* Sedikit padding samping agar tidak terlalu lebar */
+}
+
+/* Styling Pemisah (Garis) */
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+}
+
+/* Styling Bagian (Kontak, Keahlian) */
+.section {
+    text-align: center; /* Menengahkan judul section */
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.section a {
+    color: #007bff; /* Warna biru untuk link */
+    text-decoration: none; /* Hilangkan garis bawah default */
+}
+
+.section a:hover {
+    text-decoration: underline; /* Tampilkan garis bawah saat disentuh */
+}
+
+/* Styling Daftar Keahlian */
+.skills-list {
+    display: flex;
+    flex-direction: column; /* Susun keahlian secara vertikal */
+    gap: 10px; /* Jarak antara item */
+    margin-top: 15px;
+    align-items: center; /* Menengahkan item keahlian di tengah */
+}
+
+.skill-item {
+    background-color: #f7f7f7;
+    color: #555;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 80%; /* Lebar item keahlian */
+    max-width: 250px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid #ddd;
+}
